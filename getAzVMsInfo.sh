@@ -1,4 +1,5 @@
 #!/bin/sh
+# version: 1.0.0
 
 # Check if a parameter is passed
 if [ -z "$1" ]; then
