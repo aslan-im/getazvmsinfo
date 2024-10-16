@@ -46,7 +46,7 @@ for row in $(echo "$vms" | jq -r '.[]  | @base64'); do
      vms_array="$vms_array $vm_name,$resource_group,$nic_name,$nsg_name,$vnet_name,$subnet_name"
 done
 
-echo "VM,RG,NIC,NSG,VNet,Subnet" >vms.csv
+echo "VM,RG,NIC,NIC_NSG,VNet,Subnet" >vms.csv
 
 # Print the final array
 for vm in $vms_array; do
